@@ -1,66 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">  
+    <title>Todo List App in JavaScript | CodingNepal</title>
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Iconscout Link For Icons -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  </head>
+  <body>
     <div class="wrapper">
-        <div class="task-input">
-            <img src="bars-icon.svg" alt="icon">
-            <input type="text" placeholder="Add a new node">
+      <div class="task-input">
+        <img src="bars-icon.svg" alt="icon">
+        <input type="text" placeholder="Add a new task">
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
         </div>
-        <div class="controls">
-            <div class="filters">
-                <span id="all">All</span>
-                <span id="pending">Pending</span>
-                <span id="completed">Completed</span>
-            </div>
-            <button class="clear-btn">Clear All</button>
-        </div>
-        <ul class="task-box">
-            <li class="task">
-                <label for="">
-                    <input type="checkbox" id="1">
-                    <p>Renew gym membership</p>
-                </label>
-                <div class="settings">
-                    <i class="uil uil-ellipsis-h"></i>
-                </div>
-            </li>
-            <li class="task">
-                <label for="">
-                    <input type="checkbox" id="1">
-                    <p>Do your homework</p>
-                </label>
-                <div class="settings">
-                    <i class="uil uil-ellipsis-h"></i>
-                </div>
-            </li>
-            <li class="task">
-                <label for="">
-                    <input type="checkbox" id="1">
-                    <p>Learn Node Js</p>
-                </label>
-                <div class="settings">
-                    <i class="uil uil-ellipsis-h"></i>
-                </div>
-            </li>
-            <li class="task">
-                <label for="">
-                    <input type="checkbox" id="1">
-                    <p>complete web dev projects</p>
-                </label>
-                <div class="settings">
-                    <i class="uil uil-ellipsis-h"></i>
-                </div>
-            </li>
-             
-        </ul>
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box"></ul>
     </div>
-</body>
+
+    <script src="script.js"></script>
+
+  </body>
 </html>
